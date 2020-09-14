@@ -1,0 +1,342 @@
+@font-face{
+	src: url(neckar-regular.ttf);
+	font-family: neckar;
+}
+
+@font-face{
+	src: url(bein-normal.ttf);
+	font-family: beIN;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	direction: rtl;
+	font-family: beIN;
+}
+
+/* SIDE BAR */
+
+.adminInfos{
+	display: flex;
+	padding: 35px 15px;
+}
+
+.userTxt div{
+	line-height: 25px;
+}
+
+.adminInfos img{
+	height: 60px;
+	width: 60px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.menuItem{
+	padding: 15px 10px;
+	cursor: pointer;
+}
+
+.menuItem:hover{
+	background-color: #354346;
+}
+
+.activeTab{
+	background-color: #787f82;
+	border-right:3px solid white;
+	/*color: black;*/
+}
+
+/* END SIDE BAR */
+
+body{
+	height: 100vh;
+	display: flex;
+}
+
+body > aside{
+	width: 300px;
+	background-color: #28383c;
+	color: white;
+	height: 100%;
+}
+
+body > article{
+	width: calc(100% - 300px);
+	background-color: green;
+	height: 100%;
+}
+
+body > article header{
+	position: relative;
+	height: 70px;
+	line-height: 70px;
+	background-color: #8ad4eb;
+	box-sizing: border-box;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+	z-index: 5;
+}
+
+body > article header input[type=text]{
+	height: 35px;
+	width: 250px;
+	border-radius: 20px;
+	border: none;
+	padding: 0 20px;
+	line-height: 35px;
+	outline: none;
+}
+
+.header_menu{
+	width: 40px;
+	height: 40px;
+	margin-left: 80px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.header_menu:hover{
+	overflow: visible;
+}
+
+.header_menu .drop_down{
+	position: relative;
+	left: 100px;
+	top: 5px;
+	background-color: white;
+	width: 250px;
+	border: 2px solid tomato;
+	border-radius: 5px;
+}
+
+.header_menu .drop_down::before{
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: 124px;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: none;
+	border-bottom: 6px solid tomato;
+}
+
+.drop_down div{
+	box-sizing: border-box;
+	padding: 0 15px;
+	line-height: 50px;
+}
+
+.drop_down div:hover{
+	background-color: #ddd;
+}
+
+body > article header button{
+	display: block;
+	background-image: url(../img/burger.svg);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+	background-size: 50% 50%;
+	background-position: center center;
+	background-color: tomato;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+}
+
+body > article main{
+	position: relative;
+	height: calc(100% - 70px);
+	background-color: blue;
+}
+
+body > article main > section{
+	box-sizing: border-box;
+	padding: 40px 30px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+section.active{
+	display: block;
+}
+
+.book table{
+	width: 	100%;
+	border-collapse: collapse;
+}
+
+.book table td{
+	/*border: 1px dotted black;*/
+}
+
+.book table tr td:first-child{
+	text-align: center;
+}
+
+.book table thead{
+	background-color: #444;
+	color: white;
+	padding: 15px 10px;
+}
+
+.book table thead th{
+	padding: 15px 10px;
+}
+
+.book table tbody tr:nth-child(odd){
+	background-color: #ccc;
+}
+
+.head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bolder;
+	margin-bottom: 15px;
+	font-size: 16px;
+	background-color: #ddd;
+	box-sizing: border-box;
+	padding: 0 5px;
+	border-radius: 40px;
+}
+
+.head .tools{
+	display: flex;
+	align-items: center;
+}
+
+.head .tools button{
+	height: 30px;
+	width: 30px;
+	background-color: #01b8aa;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 5px;
+	transition: margin-top .2s;
+}
+
+.head .tools button:hover{
+	margin-top: -5px;
+}
+
+.add{
+	background-image: url(../img/add.svg);
+}
+
+.delete{
+	background-image: url(../img/delete.svg);
+}
+
+.save{
+	background-image: url(../img/save.svg);
+}
+
+.check_demand{
+	background-image: url(../img/check_demanded.png);
+}
+
+.cover{
+	display: none;
+	color: white;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+}
+
+.cover .imgContainer img{
+	display: block;
+	width: 100px;
+	height: 150px;
+	margin-bottom: 20px;
+	background-color: red;
+}
+
+.cover .imgContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	text-align: center;
+	background-color: #ddd;
+	width: 300px;
+	padding: 20px;
+}
+
+.cover .imgContainer input[type=file]{
+	background-color: #01b8aa;
+	color: white;
+}
+
+.cover .imgContainer label{
+	display: block;
+	width: 250px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #01b8aa;
+}
+
+.cover button.close{
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	outline: none;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 28px;
+	line-height: 35px;
+}
+
+section form table td:first-child{
+	padding: 0px 10px 0px 20px;
+	background-color: black;
+	color: white;
+}
+
+section form table td:last-child{
+	padding-left: 15px;
+	width: 250px;
+}
+
+section form button{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #01b8aa;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+section form input, section form textarea{
+	padding: 0px 10px;
+	width: 100%;
+}
+

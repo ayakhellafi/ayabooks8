@@ -1,0 +1,25 @@
+.compose{
+    margin: 30px auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /*display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;*/
+}
+
+.details .infos_txt{
+    padding: 30px 15px 10px 100px;
+}
+
+.compose img{
+    width: 150px;
+    height: 200px;
+    margin: 0 10px  
+}
+
+.auth_img{
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+}

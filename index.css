@@ -1,0 +1,416 @@
+@font-face{
+    src: url(../admin/css/bein-normal.ttf);
+    font-family: beIN;
+}
+
+@font-face{
+    src: url(../admin/css/neckar-regular.ttf);
+    font-family: neckar;
+}
+
+*{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    font-family: neckar;
+}
+
+header{
+    border: 1px solid #eee;
+    background-color: #eee;
+}
+
+header nav{
+    height: 60px;
+    background-color: #333;
+    color: grey;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom: 3px solid black;
+    font-size: 18px;
+    line-height: 60px;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 20px;
+    padding: 10px 15px;
+    border-radius: 40px;
+}
+
+header nav a:hover{
+    color: white;
+    background-color: #777;
+}
+
+a.actual{
+    color: white;
+    background-color: #555;
+    
+}
+
+
+.float{
+    float: left;
+}
+
+.float div{
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.float div:hover{
+    color: white;
+    background-color: #555;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border: 1px solid blue;*/
+    width: 80%;
+    margin: 50px auto;
+}
+
+.logo{
+    height: 60px;
+    width: 160px;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner form{
+    height: 60px;
+    /*background-color: rgba(0,0,255.5);*/
+    width: 300px;
+    line-height: 60px;
+}
+
+.banner form input{
+    border: none;
+    outline: none;
+    height: 85%;    
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.cart{
+    height: 54px;
+    width: 54px;
+    border-radius: 10px;
+    border-bottom: 3px solid #80a21f;
+    background-color: #a0c230;
+    background-image: url(../img/cart.svg);
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+main{
+    /*border: 1px solid green;*/
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+main > div{
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.categories{
+    width: 300px;
+    background-color: #ddd;
+}
+
+.categories h3{
+    background-color: #a0c230;
+    color: white;
+    border-radius: 10px;
+    border-bottom: 3px solid #80a21f;
+    padding: 15px;
+    text-shadow: 2px 1px 5px rgba(0,0,0,.5);
+}
+
+.categories ul{
+    list-style: none;
+}
+
+.categories ul a{
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+.categories ul li{
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.categories ul a:nth-child(odd) li{
+    background-color: #ddd;
+}
+
+.categories ul a:nth-child(even) li{
+    background-color: #bbb;
+}
+
+.principal{
+    width: 700px;
+    /*background-color: lightcoral;*/
+}
+
+.week_book{
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.week_book > img{
+    /*border: 1px solid red;*/
+    width: 170px;
+    height: 250px;  
+}
+
+.book_infos{
+    position: relative;      
+    /*border: 1px solid green;*/
+    height: 100%;
+    padding: 50px 20px; 
+}
+
+.book_infos h1{
+    color: #80a21f;
+}
+
+.book_infos h4{
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.book_infos h6{
+    margin-bottom: 7px;
+}
+
+.book_infos p{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.book_infos .price{
+    margin-bottom: 20px;
+}
+
+.book_infos .shop_button{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-bottom: 3px solid black;
+    height: 40px;
+    padding-right: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    background-color: #333;
+    font-size: 17px;
+}
+
+.shop_button img{
+    height: 20px;
+    width: 20px;
+    background-color: #80a21f;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.principal nav{
+    margin: 20px 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    border-bottom: 3px solid #000;
+}
+
+.principal nav div{
+    padding: 20px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.principal nav div.active{
+    background-color: #80a21f;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row a{
+    text-decoration: none;
+}
+
+.book_card{
+    cursor: pointer;
+    width: 215px
+}
+
+.book_card .upPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 215px;
+    background-color: #ccc;
+    position: relative;
+    border-radius: 10px;
+}
+
+.upPart img{
+    height: 120px;
+    width: 75px;
+    vertical-align: middle;
+}
+
+.upPart .new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: tomato;
+    color: white;
+    width: 50px;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.add_to_cart{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #80a21f;
+    border: none;
+    border-radius: 10px;
+    background-image: url(../img/cart.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.downPart{
+    padding: 15px 0;
+}
+
+.downPart p{
+    color: gray;
+}
+
+.downPart .price{
+    color: #80a21f;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.social{
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    color: #80a21f;
+}
+
+.social a img{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer h2{
+    color: #80a21f;
+    margin-bottom: 20px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination div{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+
+.left{
+    background-image: url(../img/left_arrow.png);
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.right{
+    background-image: url(../img/right_arrow.png);
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.categories form{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.categories form *{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+}
+
+.categories form input[type=submit]{
+    margin-top: 10px;
+    background-color: #80a21f;
+    color: white;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}

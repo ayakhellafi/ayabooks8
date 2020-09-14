@@ -1,0 +1,30 @@
+.principal{
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.book {
+    direction: rtl;
+    border: 1px solid red;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.book img{
+    background-color: black;
+    width: 90px;
+}
+
+.book button{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.infos{
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
